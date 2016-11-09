@@ -227,6 +227,12 @@ function v() {
 	fi;
 }
 
+# `vc` with no arguments opens Visual Code, otherwise opens the
+# given location
+function vc () {
+	VSCODE_CWD="$PWD" open -n -b "com.microsoft.VSCode" --args $* ;
+}
+
 # `p` with no arguments opens the current directory in PHPStorm, otherwise
 # opens the given location
 function p() {
