@@ -10,6 +10,10 @@ export PATH="$(brew --prefix coreutils)/libexec/gnubin:$PATH"
 # Add sbin for Brews
 export PATH="/usr/local/sbin:$PATH"
 
+# Android SDK
+export ANDROID_HOME=~/Library/Android/sdk
+export PATH=${PATH}:${ANDROID_HOME}/tools
+
 # Load the shell dotfiles, and then some:
 # * ~/.path can be used to extend `$PATH`.
 # * ~/.extra can be used for other settings you don’t want to commit.
