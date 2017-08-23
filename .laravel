@@ -18,6 +18,11 @@ alias ads='php artisan db:seed'
 alias adr='php artisan migrate:rollback && php artisan migrate && php artisan db:seed'
 
 # Laravel Homestead
+
+function homestead() {
+    ( cd ~/Homestead && vagrant $* )
+}
+
 alias hs7='cd ~/homestead'
 alias hs7edit='sudo nano ~/.homestead/homestead.yaml'
 alias hs7u='cd ~/homestead && vagrant up'
