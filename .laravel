@@ -23,13 +23,9 @@ function homestead() {
     ( cd ~/Homestead && vagrant $* )
 }
 
-alias hs7='cd ~/homestead'
-alias hs7edit='sudo nano ~/.homestead/homestead.yaml'
-alias hs7u='cd ~/homestead && vagrant up'
-alias hs7ssh='cd ~/homestead && vagrant ssh'
-alias hs7h='cd ~/homestead && vagrant halt'
-alias hs7hu='cd ~/homestead && vagrant halt && vagrant up'
-alias hs7p='cd ~/homestead && vagrant provision'
+alias hs='cd ~/homestead'
+alias hsedit='sudo nano ~/.homestead/homestead.yaml'
+alias hsp='cd ~/homestead && vagrant provision'
 alias hsssh='homestead ssh'
 alias hsu='homestead up'
 alias hsh='homestead halt'
