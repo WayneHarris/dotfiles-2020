@@ -24,7 +24,7 @@ function homestead() {
 }
 
 alias hs='cd ~/homestead'
-alias hsedit='sudo nano ~/.homestead/homestead.yaml'
+alias hsedit='sudo nano ~/homestead/homestead.yaml'
 alias hsp='cd ~/homestead && vagrant provision'
 alias hsssh='homestead ssh'
 alias hsu='homestead up'
