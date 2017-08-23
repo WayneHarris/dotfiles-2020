@@ -97,8 +97,8 @@ brew tap homebrew/dupes
 brew tap homebrew/versions
 brew tap homebrew/homebrew-php
 brew unlink php56
-brew install homebrew/php/php70
-brew install homebrew/php/php70-imagick
+brew install homebrew/php/php71
+brew install homebrew/php/php71-imagick
 
 # Install WordPress Tools
 brew install homebrew/php/wp-cli
