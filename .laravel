@@ -14,6 +14,7 @@ function laranew {
 alias art='php artisan'
 alias am='php artisan migrate'
 alias amr='php artisan migrate:rollback'
+alias amf='php artisan migrate:fresh'
 alias ads='php artisan db:seed'
 alias adr='php artisan migrate:rollback && php artisan migrate && php artisan db:seed'
 
