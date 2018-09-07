@@ -6,7 +6,7 @@ function laranew {
 	git init
 	git add .
 	git commit -m "Initial Commit"
-	open "http://$PROJECTNAME.dev"
+	open "http://$PROJECTNAME.localhost"
 	p
 }
 
@@ -15,8 +15,10 @@ alias art='php artisan'
 alias am='php artisan migrate'
 alias amr='php artisan migrate:rollback'
 alias amf='php artisan migrate:fresh'
-alias ads='php artisan db:seed'
-alias adr='php artisan migrate:rollback && php artisan migrate && php artisan db:seed'
+alias adbs='php artisan db:seed'
+alias amfdbs='php artisan migrate:rollback && php artisan migrate && php artisan db:seed'
+alias artclear='art clear && art config:clear && art cache:clear && art view:clear && art route:clear && composer dump-autoload'
+
 
 # Laravel Homestead
 
