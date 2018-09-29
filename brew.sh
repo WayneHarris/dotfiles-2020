@@ -24,7 +24,6 @@ brew install gnu-sed --with-default-names # https://www.gnu.org/software/sed/
 # Note: don’t forget to add `/usr/local/bin/bash` to `/etc/shells` before
 # running `chsh`.
 brew install bash
-brew tap homebrew/versions # https://github.com/Homebrew/homebrew-versions
 brew install bash-completion2 # https://github.com/Homebrew/homebrew-versions/blob/master/bash-completion2.rb
 
 # Switch to using brew-installed bash as default shell
@@ -92,16 +91,15 @@ brew install pngcheck # http://www.libpng.org/pub/png/apps/pngcheck.html
 brew install webkit2png # http://www.paulhammond.org/webkit2png/
 brew install zopfli # https://github.com/google/zopfli
 
-# Install PHP https://github.com/Homebrew/homebrew-php
-brew tap homebrew/dupes
-brew tap homebrew/versions
-brew tap homebrew/homebrew-php
+# Install PHP
 brew unlink php56
-brew install homebrew/php/php71
+brew install php
 brew install homebrew/php/php71-imagick
+pecl install imagick
+
 
 # Install WordPress Tools
-brew install homebrew/php/wp-cli
+brew install wp-cli
 
 # Install MariaDB
 brew install mariadb
