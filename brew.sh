@@ -90,6 +90,7 @@ brew install vbindiff # https://www.cjmweb.net/vbindiff/
 brew install pngcheck # http://www.libpng.org/pub/png/apps/pngcheck.html
 brew install webkit2png # http://www.paulhammond.org/webkit2png/
 brew install zopfli # https://github.com/google/zopfli
+brew install wifi-password # https://github.com/rauchg/wifi-password
 
 # Install PHP
 brew unlink php56
