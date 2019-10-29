@@ -105,5 +105,9 @@ brew install wp-cli
 # Install MariaDB
 brew install mariadb
 
+# Install Numi Alfred Intergration
+brew tap danielbayley/alfred
+brew cask install alfred-numi
+
 # Remove outdated versions from the cellar.
 brew cleanup
