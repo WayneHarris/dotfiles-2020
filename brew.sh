@@ -71,7 +71,7 @@ brew install ucspi-tcp # `tcpserver` etc. https://cr.yp.to/ucspi-tcp.html
 # Install Tools.
 brew install ngrep # http://ngrep.sourceforge.net/
 brew install ack # http://beyondgrep.com/
-brew install dark-mode # c
+brew install dark-mode # https://github.com/sindresorhus/dark-mode
 brew install git # https://git-scm.com/
 brew install git-lfs # https://github.com/github/git-lfs
 brew install bfg # https://rtyley.github.io/bfg-repo-cleaner/s
@@ -95,6 +95,7 @@ brew install wifi-password # https://github.com/rauchg/wifi-password
 # Install PHP
 brew unlink php56
 brew install php
+brew intall php@7.2
 brew install homebrew/php/php71-imagick
 pecl install imagick
 
@@ -108,6 +109,9 @@ brew install mariadb
 # Install Numi Alfred Intergration
 brew tap danielbayley/alfred
 brew cask install alfred-numi
+
+# Install Mackup https://github.com/lra/mackup
+brew install mackup
 
 # Remove outdated versions from the cellar.
 brew cleanup
