@@ -37,9 +37,9 @@ brew install wget --with-iri
 
 # Install more recent versions of some macOS tools.
 brew install vim --override-system-vi
-brew install homebrew/dupes/grep
-brew install homebrew/dupes/openssh
-brew install homebrew/dupes/screen
+brew install grep
+brew install openssh
+brew install screen
 brew install nano
 
 # Install mas
@@ -92,14 +92,10 @@ brew install zopfli # https://github.com/google/zopfli
 brew install wifi-password # https://github.com/rauchg/wifi-password
 
 # Install PHP
-brew unlink php56
 brew install php
-brew intall php@7.1
 brew intall php@7.2
 brew intall php@7.3
-brew install homebrew/php/php71-imagick
 pecl install imagick
-
 
 # Install WordPress Tools
 brew install wp-cli
@@ -107,9 +103,28 @@ brew install wp-cli
 # Install MySQL
 brew install mysql
 
-# Install Numi Alfred Intergration
-brew tap danielbayley/alfred
+# Apps
+brew cask install adobe-creative-cloud
+brew cask install 1password
+brew cask install 1password-cli
+brew cask install alfred
 brew cask install alfred-numi
+brew cask install docker
+brew cask install firefox
+brew cask install github
+brew cask install google-chrome
+brew cask install gpg-suite
+brew cask install imageoptim
+brew cask install insomnia
+brew cask install phpstorm
+brew cask install slack
+brew cask install sublime-text
+brew cask install tableplus
+brew cask install the-unarchiver
+brew cask install tinkerwell
+brew cask install visual-studio-code
+brew cask install vlc
+brew cask install whatsapp
 
 # Install Mackup https://github.com/lra/mackup
 brew install mackup
