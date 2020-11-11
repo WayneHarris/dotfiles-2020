@@ -104,8 +104,8 @@ pecl install imagick
 # Install WordPress Tools
 brew install wp-cli
 
-# Install MariaDB
-brew install mariadb
+# Install MySQL
+brew install mysql
 
 # Install Numi Alfred Intergration
 brew tap danielbayley/alfred
