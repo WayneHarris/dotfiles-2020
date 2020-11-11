@@ -94,7 +94,9 @@ brew install wifi-password # https://github.com/rauchg/wifi-password
 # Install PHP
 brew unlink php56
 brew install php
+brew intall php@7.1
 brew intall php@7.2
+brew intall php@7.3
 brew install homebrew/php/php71-imagick
 pecl install imagick
 
