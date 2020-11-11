@@ -1,11 +1,14 @@
 function laranew {
 	PROJECTNAME=$1
 	sites
-	laravel new $PROJECTNAME
+	laravel new $PROJECTNAME --jet --stack=livewire
 	cd $PROJECTNAME
+	npm install
+	npm run prod
 	git init
 	git add .
 	git commit -m "Initial Commit"
+	valet secure $PROJECTNAME
 	open "http://$PROJECTNAME.localhost"
 	p
 }
