@@ -115,6 +115,7 @@ brew cask install 1password
 brew cask install 1password-cli
 brew cask install alfred
 brew cask install docker
+brew cask install dropbox
 brew cask install firefox
 brew cask install github
 brew cask install google-chrome
