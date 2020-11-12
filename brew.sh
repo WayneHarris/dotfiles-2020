@@ -124,6 +124,7 @@ brew cask install imageoptim
 brew cask install insomnia
 brew cask install phpstorm
 brew cask install slack
+brew cask install spectacle
 brew cask install sublime-text
 brew cask install setapp
 brew cask install the-unarchiver
