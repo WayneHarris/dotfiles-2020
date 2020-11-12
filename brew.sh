@@ -32,24 +32,26 @@ if ! fgrep -q '/usr/local/bin/bash' /etc/shells; then
   chsh -s /usr/local/bin/bash;
 fi;
 
-# Install `wget` with IRI support.
-brew install wget --with-iri
+# Install `wget`.
+brew install wget
 
 # Install more recent versions of some macOS tools.
-brew install vim --override-system-vi
+brew install vim
 brew install grep
 brew install openssh
 brew install screen
 brew install nano
+brew install pkg-config
 
 # Install mas
 brew install mas # https://github.com/mas-cli/mas
 
-# Install font tools.
+# Install font tools and fonts.
 brew tap bramstein/webfonttools # https://github.com/bramstein/homebrew-webfonttools
 brew install sfnt2woff
 brew install sfnt2woff-zopfli
 brew install woff2
+brew cask install font-fira-code
 
 # Install CTF tools; see https://github.com/ctfs/write-ups.
 brew install aircrack-ng
@@ -74,7 +76,7 @@ brew install ack # http://beyondgrep.com/
 brew install git # https://git-scm.com/
 brew install git-lfs # https://github.com/github/git-lfs
 brew install bfg # https://rtyley.github.io/bfg-repo-cleaner/s
-brew install imagemagick --with-webp # https://www.imagemagick.org/
+brew install imagemagick # https://www.imagemagick.org/
 brew install lynx # http://lynx.invisible-island.net/
 brew install xz # http://tukaani.org/xz/
 brew install p7zip # http://p7zip.sourceforge.net/
@@ -93,9 +95,13 @@ brew install wifi-password # https://github.com/rauchg/wifi-password
 
 # Install PHP
 brew install php
-brew intall php@7.2
-brew intall php@7.3
+brew install php@7.2
+brew install php@7.3
 pecl install imagick
+
+# Install Redis mkdir fix first
+mkdir -p /usr/local/lib/php/pecl
+pecl install redis-5.0.2
 
 # Install WordPress Tools
 brew install wp-cli
@@ -108,7 +114,6 @@ brew cask install adobe-creative-cloud
 brew cask install 1password
 brew cask install 1password-cli
 brew cask install alfred
-brew cask install alfred-numi
 brew cask install docker
 brew cask install firefox
 brew cask install github
@@ -119,7 +124,7 @@ brew cask install insomnia
 brew cask install phpstorm
 brew cask install slack
 brew cask install sublime-text
-brew cask install tableplus
+brew cask install setapp
 brew cask install the-unarchiver
 brew cask install tinkerwell
 brew cask install visual-studio-code
@@ -129,5 +134,3 @@ brew cask install whatsapp
 # Install Mackup https://github.com/lra/mackup
 brew install mackup
 
-# Remove outdated versions from the cellar.
-brew cleanup
