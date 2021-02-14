@@ -13,7 +13,7 @@ function laranew {
 	p
 }
 
-# Lavarel Artisans
+# Laravel Artisans
 alias art='php artisan'
 alias am='php artisan migrate'
 alias amr='php artisan migrate:rollback'
